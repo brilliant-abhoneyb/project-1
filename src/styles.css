@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #000;
+    padding-bottom: 50px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}

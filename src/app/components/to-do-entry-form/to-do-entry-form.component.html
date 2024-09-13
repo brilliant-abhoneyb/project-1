@@ -1,0 +1,13 @@
+<section class = "todo-entry-form">
+    <div class="todo-entry-form__content">
+        <input class = "todo-entry-form__input" type="text" name="todo" id="todo" 
+        [(ngModel)] = 'title' placeholder="Task name">
+        <button class = "todo-entry-form__button" (click)="addTask()">Create 
+            <img class = "todo-entry-form__button-icon" src="./assets/plus.svg">
+        </button>
+    </div>
+    @if ( todos$ | async; as todos) { @if (todos.length) 
+        { @for (todo of (todos$ | async); track todo.id) {
+        {{todo.title}} 
+        } } @else { } }
+</section>

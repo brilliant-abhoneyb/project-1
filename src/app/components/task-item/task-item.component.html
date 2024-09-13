@@ -1,0 +1,10 @@
+<section class="task-item">
+    <div class="task-item__overview">
+        <input class="task-item__check-task" type="checkbox" name="check-task" 
+        [checked]="task?.completed" (change)= "completeTask(task?.id)"> 
+        <a class="task-item__task-label" [ngClass] = "{completed: task?.completed}">
+            {{task?.title}}
+        </a>
+    </div>
+    <button class = "task-item__delete-task-button"><img class = "task-item__delete-task-button-icon" src="./assets/trash.svg" (click) = "deleteTask(task?.id)"></button>            
+</section>

@@ -1,0 +1,8 @@
+<section class="task-info-tag">
+    <p class="task-info-tag__label" [ngClass] = "{both: isBoth}">To do</p>
+    @if (isBoth) {
+        <span class="task-info-tag__value">{{ completed }} of {{ total }}</span>
+    } @else {
+        <span class="task-info-tag__value">{{ total }}</span>
+    }
+</section>

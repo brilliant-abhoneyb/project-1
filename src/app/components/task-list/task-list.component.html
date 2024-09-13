@@ -1,0 +1,5 @@
+<section class="task-list">
+    @for (todo of tasks; track todo.id){
+        <app-task-item [task]=todo></app-task-item>
+    }
+</section>

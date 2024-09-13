@@ -1,0 +1,29 @@
+.task-info-tag{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.task-info-tag__label{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+
+.task-info-tag__value{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 50%;
+    background: grey;
+    opacity: 80%;
+}
+
+#both{
+    color: #fff;
+}
+

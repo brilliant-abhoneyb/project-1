@@ -1,0 +1,4 @@
+.task-list-wrapper__info{
+    display: flex;
+    justify-content: space-between; 
+}
